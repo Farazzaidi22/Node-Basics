@@ -1,0 +1,13 @@
+<%- include('partials/heads.ejs') %> 
+
+  <body>
+  <%- include('partials/navbar.ejs') %> 
+
+    <h1>All the cats</h1>
+    <ul>
+      <% for(let cat of cats) { %>
+      <li><%= cat %></li>
+      <% } %>
+    </ul>
+  </body>
+</html>
